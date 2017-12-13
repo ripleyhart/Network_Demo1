@@ -3,6 +3,7 @@ edit
 set system host-name JuniperR1
 set system root-authentication plain-text-password Network-Lab
 set system services ssh
-set interface em0 unit 0 family inet address 192.168.70.20/24
+#Connect to interface Ethernet 2/0 in GNS3
+set interface ge-0/0/0 unit 0 family inet address 192.168.70.20/24
 set routing-options static route 0.0.0.0/0 next-hop 192.168.70.1
 commit
